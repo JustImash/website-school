@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content="education" />
+    <meta name="keywords" content="education, education, Fizmat, PhysMath, Physics and Mathematics"/>
+    <meta name="author" content="Imangali Zhapakov" />
+    <title>FIZMAT</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+    <link rel="shortcut icon" href="{{ url_for('static', filename='img/favicon.png') }}">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div id="branding">
+          <h1>FIZMAT <span class="highlight">ASTANA</span></h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="{{ url_for('home') }}">Home</a></li>
+            <li><a href="{{ url_for('about') }}">Information</a></li>
+            <li><a href="{{ url_for('services') }}">Homework</a></li>
+            <li><a href="{{ url_for('departments') }}">Departments</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section id="boxes">
+      <div class="container">
+        <div class="box">
+          <img src="{{ url_for('static', filename='img/eiller.png') }}" alt="html" />
+          <h3>Mathematics</h3>
+          <ul>
+              <li><a href="{{ url_for('static', filename='math/ev.html') }}">Petrova Elena Vasilievna</a></li>
+              <li><a href="{{ url_for('static', filename='math/gh.html') }}">Turalieva Gulziya Khaliullievna</a></li>
+              <li><a href="{{ url_for('static', filename='math/sd.html') }}">Salkhaeva Dana Uisinbaeva</a></li>
+              <li><a href="{{ url_for('static', filename='math/as.html') }}">Nauryzbaeva Altynkul Shegebaevna</a></li>
+          </ul>
+        </div>
+        <div class="box">
+          <img src="{{ url_for('static', filename='img/fizika.png') }}" alt="css" />
+          <h3>Physics</h3>
+          <ul>
+              <li><a href="{{ url_for('static', filename='fizika/aset.html') }}">Murtazin Aset Ruslanovich</a></li>
+              <li><a href="{{ url_for('static', filename='fizika/samatolog.html') }}">Samat Omirbekovich</a></li>
+              <li><a href="{{ url_for('static', filename='fizika/bolat.html') }}">Bolat Mukhametkalievich</a></li>
+              <li><a href="{{ url_for('static', filename='fizika/miu.html') }}">Myagkiy Alexander Andreevich</a></li>
+          </ul>
+        </div>
+        <div class="box">
+          <img src="{{ url_for('static', filename='img/trava.png') }}" alt="brush" />
+          <h3>Natural and Humanitarian Sciences</h3>
+          <ul>
+              <li><a href="{{ url_for('static', filename='nauki/azh.html') }}">Kazimova Aigul Zhumashevna (Chemistry)</a></li>
+              <li><a href="{{ url_for('static', filename='nauki/bt.html') }}">Ighilik Botagoz Tasbolatkyzy (Computer Science)</a></li>
+              <li><a href="{{ url_for('static', filename='nauki/vr.html') }}">Bekdairova Venera Zhandosovna (Geography)</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <p>Fizmat, Copyright &copy; 2024</p>
+    </footer>
+  </body> 
+</html>

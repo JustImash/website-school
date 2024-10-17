@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content="education" />
+    <meta name="keywords" content="education, education, Fizmat, PhysMath, Physics and Mathematics"/>
+    <meta name="author" content="Imangali Zhapakov" />
+    <title>FIZMAT</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+    <link rel="shortcut icon" href="{{ url_for('static', filename='img/favicon.png') }}">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div id="branding">
+          <h1>FIZMAT <span class="highlight">ASTANA</span></h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="{{ url_for('home') }}">Home</a></li>
+            <li><a href="{{ url_for('about') }}">Information</a></li>
+            <li><a href="{{ url_for('services') }}">Homework</a></li>
+            <li><a href="{{ url_for('departments') }}">Departments</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section id="newsletter">
+      <div class="container">
+        <h1></h1>
+        <h1></h1>
+        <form>
+        </form>
+      </div>
+    </section>
+
+    <section id="main">
+      <div class="container">
+        <article id="main-col">
+          <h1 class="page-title">Homework</h1>
+          <ul id="services" style="padding: 20px; background: #e6e6e6; border-radius: 10px;">
+            <li style="margin-bottom: 15px;">
+              <h2 style="font-size: 1.5em; margin-bottom: 10px;">Add a notes</h2>
+              <form action="/services" method="post" style="display: flex; align-items: center; gap: 10px;">
+                <input type="email" id="email" name="email" placeholder="Enter Your Email" style="padding: 10px; height: 38px; width: 250px; border-radius: 5px; border: 1px solid #cccccc;" required>
+                <input type="text" id="text" name="text" placeholder="Enter Your Notes" style="padding: 10px; height: 38px; width: 250px; border-radius: 5px; border: 1px solid #cccccc;" required>
+                <button type="submit" class="button_1" style="height: 38px;">Submit</button>
+              </form>
+            </li>
+          </ul>
+        </article>              
+      </div>
+    </section>
+
+    <footer>
+      <p>Fizmat, Copyright &copy; 2024</p>
+    </footer>
+  </body> 
+</html>

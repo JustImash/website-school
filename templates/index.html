@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content="education" />
+    <meta name="keywords" content="education, education, Fizmat, PhysMath, Physics and Mathematics"/>
+    <meta name="author" content="Imangali Zhapakov" />
+    <title>FIZMAT</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+    <link rel="shortcut icon" href="{{ url_for('static', filename='img/favicon.png') }}">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div id="branding">
+          <h1>FIZMAT<span class="highlight"> ASTANA</span></h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="{{ url_for('home') }}">Home</a></li>
+            <li><a href="{{ url_for('about') }}">Information</a></li>
+            <li><a href="{{ url_for('services') }}">Homework</a></li>
+            <li><a href="{{ url_for('departments') }}">Departments</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section id="showcase">
+      <div class="container">
+        <h1></h1>
+        <p>
+          
+        </p>
+      </div>
+    </section>
+    <section id="newsletter">
+      <div class="container">
+        <h1>For Feedback</h1>
+        <form method="POST">
+          <input type="email" name="email" placeholder="Enter your email..." required />
+          <button type="submit" class="button_1">Submit</button>
+        </form>
+      </div>
+    </section>
+    <section id="boxes">
+      <div class="container">
+        <div class="box">
+          <img src="{{ url_for('static', filename='img/logo_html.png') }}" alt="html" />
+          <h3>Yandex.Lyceum</h3>
+          <p>
+            Yandex.Lyceum helps students from grades 8-10 learn industrial programming in more than 160 cities in Russia and Kazakhstan. 
+          </p>
+        </div>
+        <div class="box">
+          <img src="{{ url_for('static', filename='img/logo_css.png') }}" alt="css" />
+          <h3>Physics and Mathematics School</h3>
+          <p>
+            The "Republican Physics and Mathematics School" (Fizmat) was founded on October 16, 1972, based on the model of physics and mathematics boarding schools at the largest universities of the Soviet Union.
+          </p>
+        </div>
+        <div class="box">
+          <img src="{{ url_for('static', filename='img/logo_brush.png') }}" alt="brush" />
+          <h3>One of the Best Schools in the Country</h3>
+          <p>
+            Fizmat is known throughout the country as one of the best schools in Kazakhstan with a physics and mathematics focus.
+          </p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <p>Fizmat, Copyright &copy; 2024</p>
+    </footer>
+  </body>
+</html>
